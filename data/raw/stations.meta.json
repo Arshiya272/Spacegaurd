@@ -1,0 +1,18 @@
+{
+  "group_key": "stations",
+  "group_name": "Space Stations",
+  "object_type": "PAYLOAD",
+  "url": "https://celestrak.org/NORAD/elements/gp.php",
+  "params": {
+    "FORMAT": "json",
+    "GROUP": "stations"
+  },
+  "fetch_timestamp": "2026-11-06T10:37:15.095110+00:00",
+  "format": "json",
+  "offline_mode": false,
+  "total_received": 19,
+  "valid_count": 19,
+  "discarded_count": 0,
+  "validation_passed": true,
+  "source": "CelesTrak Online (https://celestrak.org/NORAD/elements/gp.php)"
+}

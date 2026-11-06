@@ -1,0 +1,25 @@
+# SpaceGuard AI - Core Dependencies
+# Python >= 3.9
+
+# Core Numerical and Scientific Computing
+numpy>=1.22.0
+pandas>=1.4.0
+
+# Astrodynamics & Orbital Mechanics
+skyfield>=1.45
+sgp4>=2.21
+
+# Machine Learning & Statistics
+scikit-learn>=1.0.0
+xgboost>=1.6.0
+
+# Visualization & Interactive Dashboard
+plotly>=5.10.0
+streamlit>=1.20.0
+
+# Network, Configuration & Utilities
+requests>=2.28.0
+pyyaml>=6.0
+
+# Testing & Quality Assurance
+pytest>=7.0.0

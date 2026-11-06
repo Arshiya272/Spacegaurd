@@ -1,0 +1,13 @@
+{
+  "group_key": "iridium-33-debris",
+  "group_name": "Iridium 33 Debris",
+  "object_type": "DEBRIS",
+  "url": "https://celestrak.org/NORAD/elements/gp.php",
+  "fetch_timestamp": "2026-11-05T12:00:00Z",
+  "format": "json",
+  "total_received": 4,
+  "valid_count": 4,
+  "discarded_count": 0,
+  "validation_passed": true,
+  "source": "CelesTrak Authentic Repository"
+}

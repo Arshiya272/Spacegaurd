@@ -1,0 +1,218 @@
+{
+  "Physics Baseline": {
+    "model_name": "Physics Baseline (Deterministic)",
+    "accuracy": 0.9973333333333333,
+    "macro_f1": 0.9968939393939394,
+    "weighted_f1": 0.9973360606060605,
+    "confusion_matrix": [
+      [
+        299,
+        0,
+        0
+      ],
+      [
+        0,
+        274,
+        2
+      ],
+      [
+        0,
+        0,
+        175
+      ]
+    ],
+    "feature_importances": {
+      "miss_distance_km": 0.0,
+      "relative_speed_km_s": 0.0,
+      "radial_separation_km": 0.0,
+      "intrack_separation_km": 0.0,
+      "crosstrack_separation_km": 0.0,
+      "relative_radial_vel_km_s": 0.0,
+      "relative_intrack_vel_km_s": 0.0,
+      "relative_crosstrack_vel_km_s": 0.0,
+      "altitude_diff_km": 0.0,
+      "mean_altitude_km": 0.0,
+      "inclination_diff_deg": 0.0,
+      "eccentricity_diff": 0.0,
+      "energy_diff_km2_s2": 0.0,
+      "time_to_tca_hours": 0.0
+    },
+    "classification_report": {
+      "Low": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 299.0
+      },
+      "Warning": {
+        "precision": 1.0,
+        "recall": 0.9927536231884058,
+        "f1-score": 0.9963636363636363,
+        "support": 276.0
+      },
+      "Critical": {
+        "precision": 0.9887005649717514,
+        "recall": 1.0,
+        "f1-score": 0.9943181818181818,
+        "support": 175.0
+      },
+      "accuracy": 0.9973333333333333,
+      "macro avg": {
+        "precision": 0.9962335216572504,
+        "recall": 0.9975845410628019,
+        "f1-score": 0.9968939393939394,
+        "support": 750.0
+      },
+      "weighted avg": {
+        "precision": 0.9973634651600753,
+        "recall": 0.9973333333333333,
+        "f1-score": 0.9973360606060605,
+        "support": 750.0
+      }
+    }
+  },
+  "Random Forest": {
+    "model_name": "Random Forest",
+    "accuracy": 0.9973333333333333,
+    "macro_f1": 0.9968939393939394,
+    "weighted_f1": 0.9973360606060605,
+    "confusion_matrix": [
+      [
+        299,
+        0,
+        0
+      ],
+      [
+        0,
+        274,
+        2
+      ],
+      [
+        0,
+        0,
+        175
+      ]
+    ],
+    "feature_importances": {
+      "miss_distance_km": 0.33663,
+      "altitude_diff_km": 0.20574,
+      "radial_separation_km": 0.17754,
+      "crosstrack_separation_km": 0.13662,
+      "intrack_separation_km": 0.1084,
+      "relative_speed_km_s": 0.01737,
+      "relative_crosstrack_vel_km_s": 0.00626,
+      "relative_intrack_vel_km_s": 0.00471,
+      "relative_radial_vel_km_s": 0.00262,
+      "energy_diff_km2_s2": 0.00114,
+      "inclination_diff_deg": 0.00078,
+      "time_to_tca_hours": 0.00077,
+      "eccentricity_diff": 0.00075,
+      "mean_altitude_km": 0.00068
+    },
+    "classification_report": {
+      "Low": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 299.0
+      },
+      "Warning": {
+        "precision": 1.0,
+        "recall": 0.9927536231884058,
+        "f1-score": 0.9963636363636363,
+        "support": 276.0
+      },
+      "Critical": {
+        "precision": 0.9887005649717514,
+        "recall": 1.0,
+        "f1-score": 0.9943181818181818,
+        "support": 175.0
+      },
+      "accuracy": 0.9973333333333333,
+      "macro avg": {
+        "precision": 0.9962335216572504,
+        "recall": 0.9975845410628019,
+        "f1-score": 0.9968939393939394,
+        "support": 750.0
+      },
+      "weighted avg": {
+        "precision": 0.9973634651600753,
+        "recall": 0.9973333333333333,
+        "f1-score": 0.9973360606060605,
+        "support": 750.0
+      }
+    }
+  },
+  "XGBoost": {
+    "model_name": "XGBoost",
+    "accuracy": 0.9986666666666667,
+    "macro_f1": 0.9984453717061098,
+    "weighted_f1": 0.9986673560805441,
+    "confusion_matrix": [
+      [
+        299,
+        0,
+        0
+      ],
+      [
+        0,
+        275,
+        1
+      ],
+      [
+        0,
+        0,
+        175
+      ]
+    ],
+    "feature_importances": {
+      "miss_distance_km": 0.94558,
+      "crosstrack_separation_km": 0.01172,
+      "intrack_separation_km": 0.00954,
+      "radial_separation_km": 0.00916,
+      "relative_speed_km_s": 0.00534,
+      "altitude_diff_km": 0.00511,
+      "inclination_diff_deg": 0.00484,
+      "relative_radial_vel_km_s": 0.00394,
+      "relative_crosstrack_vel_km_s": 0.00255,
+      "relative_intrack_vel_km_s": 0.0013,
+      "mean_altitude_km": 0.00065,
+      "energy_diff_km2_s2": 0.00027,
+      "eccentricity_diff": 0.0,
+      "time_to_tca_hours": 0.0
+    },
+    "classification_report": {
+      "Low": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 299.0
+      },
+      "Warning": {
+        "precision": 1.0,
+        "recall": 0.9963768115942029,
+        "f1-score": 0.9981851179673321,
+        "support": 276.0
+      },
+      "Critical": {
+        "precision": 0.9943181818181818,
+        "recall": 1.0,
+        "f1-score": 0.9971509971509972,
+        "support": 175.0
+      },
+      "accuracy": 0.9986666666666667,
+      "macro avg": {
+        "precision": 0.9981060606060606,
+        "recall": 0.9987922705314011,
+        "f1-score": 0.9984453717061098,
+        "support": 750.0
+      },
+      "weighted avg": {
+        "precision": 0.9986742424242423,
+        "recall": 0.9986666666666667,
+        "f1-score": 0.9986673560805441,
+        "support": 750.0
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "group_key": "starlink",
+  "group_name": "Starlink Constellation",
+  "object_type": "ACTIVE",
+  "url": "https://celestrak.org/NORAD/elements/gp.php",
+  "params": {
+    "FORMAT": "json",
+    "GROUP": "starlink"
+  },
+  "fetch_timestamp": "2026-11-06T10:37:23.454314+00:00",
+  "format": "json",
+  "offline_mode": false,
+  "total_received": 11206,
+  "valid_count": 11206,
+  "discarded_count": 0,
+  "validation_passed": true,
+  "source": "CelesTrak Online (https://celestrak.org/NORAD/elements/gp.php)"
+}

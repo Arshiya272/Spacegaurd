@@ -1,0 +1,18 @@
+{
+  "group_key": "active",
+  "group_name": "Active Satellites",
+  "object_type": "ACTIVE",
+  "url": "https://celestrak.org/NORAD/elements/gp.php",
+  "params": {
+    "FORMAT": "json",
+    "GROUP": "active"
+  },
+  "fetch_timestamp": "2026-11-06T10:37:16.935903+00:00",
+  "format": "json",
+  "offline_mode": false,
+  "total_received": 16872,
+  "valid_count": 16872,
+  "discarded_count": 0,
+  "validation_passed": true,
+  "source": "CelesTrak Online (https://celestrak.org/NORAD/elements/gp.php)"
+}

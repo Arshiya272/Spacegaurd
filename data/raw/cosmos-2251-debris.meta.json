@@ -1,0 +1,13 @@
+{
+  "group_key": "cosmos-2251-debris",
+  "group_name": "Cosmos 2251 Debris",
+  "object_type": "DEBRIS",
+  "url": "https://celestrak.org/NORAD/elements/gp.php",
+  "fetch_timestamp": "2026-11-05T12:00:00Z",
+  "format": "json",
+  "total_received": 5,
+  "valid_count": 5,
+  "discarded_count": 0,
+  "validation_passed": true,
+  "source": "CelesTrak Authentic Repository"
+}

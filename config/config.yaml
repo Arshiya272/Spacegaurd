@@ -1,0 +1,46 @@
+# SpaceGuard AI Configuration
+
+project:
+  name: "SpaceGuard AI"
+  version: "0.1.0"
+  description: "AI-Powered Space Debris Tracking and Collision Risk Prediction System"
+
+data_sources:
+  celestrak:
+    base_url: "https://celestrak.org/NORAD/elements/gp.php"
+    format: "json"  # Preferred OMM format: 'json', 'csv', or 'tle'
+    groups:
+      stations: "stations"
+      active: "active"
+      debris_cosmos: "1999-025"    # Cosmos 2251 debris
+      debris_fengyun: "1982-092"   # Fengyun 1C debris
+      debris_iridium: "1997-051"   # Iridium 33 debris
+      starlink: "starlink"
+
+propagation:
+  propagator: "SGP4"
+  time_step_seconds: 60
+  screening_window_hours: 24
+  coordinate_frame: "TEME"     # True Equator, Mean Equinox
+
+conjunction:
+  # Initial geometric filter (spatial bounding box)
+  spatial_filter_km: 1000.0
+  # Close approach warning threshold (miss distance)
+  miss_distance_warning_km: 50.0
+  miss_distance_critical_km: 10.0
+
+ml_model:
+  algorithm: "XGBoost"
+  random_state: 42
+  test_size: 0.2
+  risk_classes:
+    - "Low"
+    - "Medium"
+    - "Critical"
+
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  models_dir: "models"
+  outputs_dir: "outputs"

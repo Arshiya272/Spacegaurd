@@ -1,0 +1,125 @@
+[
+  {
+    "target_id": "39084",
+    "target_name": "LANDSAT 8",
+    "target_type": "ACTIVE",
+    "chaser_id": "34002",
+    "chaser_name": "IRIDIUM 33 DEB",
+    "chaser_type": "DEBRIS",
+    "tca": "2026-11-06 11:36:57.941588+00:00",
+    "miss_distance_km": 41.92537661265589,
+    "relative_speed_km_s": 15.019607679674799,
+    "radial_separation_km": 33.607100414274704,
+    "intrack_separation_km": 2.509773155711919,
+    "crosstrack_separation_km": -24.939948768286563,
+    "relative_radial_vel_km_s": 0.14602015047834094,
+    "relative_intrack_vel_km_s": 14.963989131910001,
+    "relative_crosstrack_vel_km_s": 1.2830908880823462,
+    "target_altitude_km": 695.7874612243468,
+    "chaser_altitude_km": 662.2249822371032,
+    "target_position_eci": [
+      -1155.999449703326,
+      -3339.534893767523,
+      6127.934337825668
+    ],
+    "chaser_position_eci": [
+      -1128.590330634012,
+      -3335.5997186498926,
+      6096.454315704475
+    ],
+    "physics_risk_level": "WARNING",
+    "screening_disclaimer": "Deterministic geometric screening baseline. Does not represent statistical collision probability (Pc).",
+    "tca_iso": "2026-11-06T11:36:57.941588+00:00",
+    "ml_model_used": "XGBClassifier",
+    "ml_predicted_risk": "Warning",
+    "ml_risk_probabilities": {
+      "Low": 0.0282,
+      "Warning": 0.9295,
+      "Critical": 0.0423
+    },
+    "physics_baseline_risk": "Low",
+    "ml_disclaimer": "ML screening classification reflects algorithmic prioritization. Does not represent statistical collision probability (Pc)."
+  },
+  {
+    "target_id": "39084",
+    "target_name": "LANDSAT 8",
+    "target_type": "ACTIVE",
+    "chaser_id": "34005",
+    "chaser_name": "IRIDIUM 33 DEB",
+    "chaser_type": "DEBRIS",
+    "tca": "2026-11-07 09:02:59.892936+00:00",
+    "miss_distance_km": 52.09599464061914,
+    "relative_speed_km_s": 15.03591846936952,
+    "radial_separation_km": 51.88737021843846,
+    "intrack_separation_km": 0.16535720253993347,
+    "crosstrack_separation_km": -4.654688647556524,
+    "relative_radial_vel_km_s": 0.08812951927506951,
+    "relative_intrack_vel_km_s": 14.988908952054238,
+    "relative_crosstrack_vel_km_s": 1.1847724812756832,
+    "target_altitude_km": 696.0539330064767,
+    "chaser_altitude_km": 644.1681073999189,
+    "target_position_eci": [
+      -1232.5932821130123,
+      -3524.315214374142,
+      6008.6681908099945
+    ],
+    "chaser_position_eci": [
+      -1219.590215551757,
+      -3500.8432640943715,
+      5964.014182393471
+    ],
+    "physics_risk_level": "MONITORING",
+    "screening_disclaimer": "Deterministic geometric screening baseline. Does not represent statistical collision probability (Pc).",
+    "tca_iso": "2026-11-07T09:02:59.892936+00:00",
+    "ml_model_used": "XGBClassifier",
+    "ml_predicted_risk": "Low",
+    "ml_risk_probabilities": {
+      "Low": 0.9989,
+      "Warning": 0.0003,
+      "Critical": 0.0008
+    },
+    "physics_baseline_risk": "Low",
+    "ml_disclaimer": "ML screening classification reflects algorithmic prioritization. Does not represent statistical collision probability (Pc)."
+  },
+  {
+    "target_id": "39634",
+    "target_name": "SENTINEL-1A",
+    "target_type": "ACTIVE",
+    "chaser_id": "33761",
+    "chaser_name": "COSMOS 2251 DEB",
+    "chaser_type": "DEBRIS",
+    "tca": "2026-11-07 04:52:43.360847+00:00",
+    "miss_distance_km": 60.16784114644119,
+    "relative_speed_km_s": 5.823307541246589,
+    "radial_separation_km": -58.73537524181817,
+    "intrack_separation_km": 11.480348619220404,
+    "crosstrack_separation_km": -6.206963751091134,
+    "relative_radial_vel_km_s": -0.11162478705621465,
+    "relative_intrack_vel_km_s": 2.3224615276334624,
+    "relative_crosstrack_vel_km_s": 5.338972099525946,
+    "target_altitude_km": 703.9510690315847,
+    "chaser_altitude_km": 762.6983703952656,
+    "target_position_eci": [
+      215.1474814098823,
+      3815.675199552146,
+      -5962.407714194425
+    ],
+    "chaser_position_eci": [
+      219.28350248641965,
+      3836.4695380390576,
+      -6018.716309672998
+    ],
+    "physics_risk_level": "MONITORING",
+    "screening_disclaimer": "Deterministic geometric screening baseline. Does not represent statistical collision probability (Pc).",
+    "tca_iso": "2026-11-07T04:52:43.360847+00:00",
+    "ml_model_used": "XGBClassifier",
+    "ml_predicted_risk": "Low",
+    "ml_risk_probabilities": {
+      "Low": 0.9996,
+      "Warning": 0.0003,
+      "Critical": 0.0002
+    },
+    "physics_baseline_risk": "Low",
+    "ml_disclaimer": "ML screening classification reflects algorithmic prioritization. Does not represent statistical collision probability (Pc)."
+  }
+]
