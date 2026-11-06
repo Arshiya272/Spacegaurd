@@ -1,11 +1,11 @@
-# SpaceGuard AI 🛰️🛡️
+# SpaceGuard AI 
 ### AI-Powered Space Debris Tracking and Collision Risk Analysis System
 
 SpaceGuard AI is an advanced, production-grade space situational awareness (SSA) application engineered to track resident space objects (active satellites and space debris), compute high-precision orbital trajectories using SGP4, screen for dangerous orbital close approaches (conjunctions), and categorize collision risks using machine learning models validated against deterministic physics baselines.
 
 ---
 
-## 📌 Problem Statement
+##  Problem Statement
 
 Low Earth Orbit (LEO) is experiencing an exponential rise in resident space objects due to mega-constellations and historical fragmentation debris (such as the Cosmos 2251 / Iridium 33 collision and the Fengyun-1C test). Satellite operators face thousands of close-approach conjunction warnings weekly. Operational teams need:
 1. High-fidelity automated orbital propagation using validated models (SGP4).
@@ -15,7 +15,7 @@ Low Earth Orbit (LEO) is experiencing an exponential rise in resident space obje
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - **Authentic Orbital Data Ingestion**: Direct integration with CelesTrak using standard CCSDS Orbit Mean-Elements Messages (OMM JSON/CSV) and backward-compatible Two-Line Element (TLE) parsing.
 - **High-Fidelity SGP4 Propagation**: Propagates satellite and debris positions $\vec{r}(t)$ and velocities $\vec{v}(t)$ in the TEME/ECI coordinate frame with physical boundary validation.
@@ -29,7 +29,7 @@ Low Earth Orbit (LEO) is experiencing an exponential rise in resident space obje
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```text
 spaceguard_ai/
@@ -90,7 +90,7 @@ spaceguard_ai/
 
 ---
 
-## 🔬 Scientific Methodology & Integrity
+##  Scientific Methodology & Integrity
 
 ### 1. SGP4 Limits & Coordinates
 - SGP4 models secular and periodic perturbations from Earth oblateness ($J_2, J_3, J_4$), atmospheric drag ($B^*$), and gravitational resonances.
@@ -105,7 +105,7 @@ spaceguard_ai/
 
 ---
 
-## 📊 Machine Learning Model Benchmarks
+##  Machine Learning Model Benchmarks
 
 Trained on 3,000 physically consistent simulation encounter scenarios across LEO/MEO shells with an 75/25 stratified train/test split:
 
@@ -123,7 +123,7 @@ Trained on 3,000 physically consistent simulation encounter scenarios across LEO
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Astrodynamics & Mechanics**: SGP4, Skyfield, NumPy, SciPy
 - **Data Engineering**: Pandas, Requests, PyYAML
@@ -134,7 +134,7 @@ Trained on 3,000 physically consistent simulation encounter scenarios across LEO
 
 ---
 
-## ⚡ Quickstart & Installation
+##  Quickstart & Installation
 
 ### 1. Clone & Enter Project Directory
 ```bash
@@ -189,10 +189,10 @@ python3 scripts/fetch_data.py --refresh
 
 ---
 
-## 🖼️ Dashboard Walkthrough
+## Dashboard Walkthrough
 
-1. **📊 Overview & Telemetry**: Instant KPI cards displaying Total Tracked RSOs, Active Payloads, Tracked Debris, Screened Conjunctions, and Priority Alerts, accompanied by an altitude distribution chart and risk breakdown pie.
-2. **🌐 3D Orbital Tracking**: Interactive 3D Earth globe rendered with continent borders, equator line, polar axis, active satellite markers (electric cyan), debris fragments (bright crimson), and highlighted orbital trajectories.
-3. **⚠️ Collision Risk Analysis**: Interactive table of close-approach events with sortable miss distances, relative velocities, UTC TCA timestamps, and deep RIC frame decomposition.
-4. **🤖 Machine Learning Benchmarks**: Accuracy and F1 benchmark tables comparing XGBoost, Random Forest, and the Physics Baseline, accompanied by feature importance bar charts and confusion matrices.
-5. **💾 Data Management & Provenance**: Audit log of all ingested CelesTrak groups, fetch epochs, validation statistics, and local disk cache status.
+1. ** Overview & Telemetry**: Instant KPI cards displaying Total Tracked RSOs, Active Payloads, Tracked Debris, Screened Conjunctions, and Priority Alerts, accompanied by an altitude distribution chart and risk breakdown pie.
+2. ** 3D Orbital Tracking**: Interactive 3D Earth globe rendered with continent borders, equator line, polar axis, active satellite markers (electric cyan), debris fragments (bright crimson), and highlighted orbital trajectories.
+3. ** Collision Risk Analysis**: Interactive table of close-approach events with sortable miss distances, relative velocities, UTC TCA timestamps, and deep RIC frame decomposition.
+4. ** Machine Learning Benchmarks**: Accuracy and F1 benchmark tables comparing XGBoost, Random Forest, and the Physics Baseline, accompanied by feature importance bar charts and confusion matrices.
+5. ** Data Management & Provenance**: Audit log of all ingested CelesTrak groups, fetch epochs, validation statistics, and local disk cache status.
